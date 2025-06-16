@@ -80,7 +80,6 @@ h4 {
 .projet:hover {
     background-color: white;
     color: #002060;
-    letter-spacing: 5px;
 }
 
 .contenue {
@@ -193,5 +192,11 @@ legend {
         height: auto;
         display: block;
         margin: auto;
+    }
+}
+
+@media (min-width: 930px) {
+    .projet:hover {
+        letter-spacing: 5px;
     }
 }
