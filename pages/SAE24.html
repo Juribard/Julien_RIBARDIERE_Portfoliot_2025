@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Accueil</title>
+</head>
+<body>
+    <header>
+        <div class="entete">
+            <!--Image photo-->
+            <img src="../images/ma_photo.png" class="image_profil">
+            <div>
+                <ul class="coordonnées">
+                    <li><h1>Julien RIBARDIERE</h1></li>
+                    <li><u>Age:</u> 27 ans</li>
+                    <li><u>Localisation:</u> CAEN, Calvados</li>
+                    <li><u>Formation en cours:</u> BUT Réseaux et Télécommunication</li>
+                    <li><u>Mail:</u> julien.ribardiere14@gmail.com</li>
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/julien-ribardiere/"><img src="../images/icons8-linkedin-48.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <h2>Projet intégratif</h2>
+    <div class="contenue">
+        <h3>Présentation</h3>
+        <p>
+            Le projet intégratif est un projet permettant de faire la synthèse de l'ensemble des compétences acquises durant le BUT Réseaux et Télécommunications. Concretement, ce projet est divisé en troix parties:<br>
+            <ul>
+                <li><u>La Partie Réseau</u>, permettant de reprendre une partie du projet intitulé "<a href="SAE12.html" class="lien_texte">S'initier aux réseaux informatiques</a>"</li>
+                <li><u>La Partie Télécommunication</u>, un petit projet visant à lire et comprendre les données affichées tel que l'OBW et le SNR sur un spectrographe</li>
+                <li><u>La Partie Mathématique</u>, un petit projet visant à identifier des intervale sur un polynome ainsi que l'utilisation de la dichotomie et la méthode de Newton</li>
+            </ul><br>
+            Il est à noter qu'il y a une partie anglais qui n'a que pour objectif de synthétiser toutes mes activités réalisés si-dessus lors d'un examen ecrite.
+        </p>
+    </div>
+    <div class="contenue">
+        <h3>Apprentissage critique</h3>
+        <p><b><u>Assister l'administrateur du réseau</u></b></p>
+        <p> • Comprendre l'architecture et les fondements des systèmes numériques, les principes du codage de l'information, des communications et de l'internet</p>
+        <p> • Configurer les fonctions de base du réseau local</p>
+        <p> • Identifier les dysfonctionnements du réseau local et savoir les signaler</p>
+        <p> • Installer un poste client, expliquer la procédure mise en place</p><br>
+        <p><b><u>Découvrir les transmissions et la ToIP</u></b></p>
+        <p> • Mesurer et analyser les signaux</p>
+        <p> • Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement</p>
+        <p> • Déployer des support de transmission</p>
+        <p> • Communiquer avec un tiers (client, collaborateur...) et adapter son discours et sa langue à son interlocuteur</p>
+        <p> • Connecter les systèmes de ToIP</p><br>  
+        <p><b><u>S'intégrer dans un service informatique</u></b></p>
+        <p> • Utiliser un système informatique et ses outils</p>
+        <p> • Lire, executer, corriger et modifier un programme</p>
+        <p> • Traduire un algorithme, dans un langage et pour un environnement donné</p>
+        <p> • Connaitre l'architecture et les technologies d'un site Web</p>
+        <p> • Choisir les mécanismes de gestion de données adaptés au développement de l'outil et argumenter ses choix</p>
+        <p> • S'intégrer dans un environnement propice au développement et au travail collaboratif</p>              
+    </div>
+    <div class="contenue">
+        <h3>Mes réalisations</h3>
+        <p>
+            Pour la partie Réseau, étrant donnée que c'est un projet à réalisé en groupe, je me suis principalement concentré sur la mise en place d'un réseau virtuel sur GNS3 hebergé sur PROXMOX (simulant un WAN), avec l'interconnection de plusieurs routeurs en utilisant le protocole OSPFv3 (avec l'utilisation de IPv4).<br>
+            De plus, j'aiégalement fait de la gestion de groupe par la répartition des taches grace à l'utilistion de TRELLO et de GANTT PROJECT que j'ai synthétisé et regrouper dans un document PDF à rendre aux enseignants.
+        </p><br>
+        <p>
+            Pour la partie Télécommunication, j'ai réalisé un petit projet de lecture et d'analyse des données affichées par un oscilloscope, tel que l'OBW (Occupancy Bandwidth) et le SNR (Signal to Noise Ratio).
+        </p><br>
+        <p>
+            Pour la partie Mathématique, j'ai du faire des recherches dans l'objectif de comprendre et de pratiquer la méthode de dichotomie et la méthode de Newton, ainsi que l'identification d'intervalle sur un polynome.
+        </p>
+    </div>
+    <div class="contenue">
+        <h3>Résultats</h3>
+        <p class="sous_titre"><u>Partie Réseau:</u></p>
+        <img class="photo" src="../images/Reseaux_sae24.png">
+        <legend><i>le plan du projet</i></legend>
+        <img class="photo" src="../images/Plan_IP_WAN.png">
+        <legend><i>Le plan IP du réseau virtuel</i></legend>
+        <img class="photo" src="../images/reseau_WAN2.png">
+        <legend><i>Le plan du réseau virtuel sous GNS3</i></legend>
+        <p class="sous_titre"><u>Partie Télécommunication:</u></p>
+        <img class="photo" src="../images/image_spectre_1.png">
+        <legend><i>exemple d'un affichage obtenue avec MATLAB</i></legend>
+        <p class="sous_titre"><u>Partie Mathématique:</u></p>
+        <img class="photo" src="../images/Newton.png">
+        <legend><i>Exemple avec l'utilisation de la méthode de Newton</i></legend>
+    </div>
+    <div class="contenue">
+        <h3>Auto-Evaluation</h3>
+        <p>
+            Pour <u>la Partie Réseau</u>, bien qu'ayant fait fonctionner l'OSPFv3 dans le réseau virtuel, j'aieu du mal à faire intéragir avec le matériel réel, empechant ainsi de faire circuler les pacquets provenant du réseau physique de la partie LAN vers la box.<br>
+            Par conséquent, je devrais approfondir mes connaissances sur la communication entre les routeurs ayant été adapter avec l'OSPFv3 et les routeurs n'ayant pas été configurer avec ce protocole (un critère faisant partie de l'évaluation du projet).
+        </p><br> 
+        <p>
+            Pour <u>la Partie Télécommunication</u>, j'ai pu apprendre à lire et à analyser les données affichées par un oscilloscope. <br>
+            Mais ayant du mal à mettre en applications les formules dans l'objectif de vérifier les résultats attribués sur le spectre. Par conséquent, je devrais continuer à pratiquer la lecture des données sur le spectrographie et à utiliser les formules pour vérifier les résultats.
+        </p><br>
+        <p>
+            Pour <u>la Partie Mathématique</u>, j'ai pu comprendre et pratiquer la méthode de dichotomie et la méthode de Newton, ainsi que l'identification d'intervalle sur un polynome.<br>
+            Et grace à un travail approfondie, j'ai pu comprendre comment utiliser la méthode de Newton pour identifier les racines d'un polynome, ainsi que l'utilisation de la méthode de dichotomie pour identifier les intervalles sur un polynome avec une relative faciliter.<br>
+        </p>
+    </div>
+    <div class="emplacement_bouton">
+        <a class="bouton" href="../index.html">Retour</a>
+    </div>
+    <footer class="piedpage">
+
+    </footer>
+    </body>
+</body>
+</html>

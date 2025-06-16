@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    margin: 0 25% 0 25%;
+}
+/*-----------MAIN-----------*/
+header {
+    margin-top: 50px;
+    border-radius: 15px;
+    color:white;
+    background-color:  #002060  ;
+}
+
+h1 {
+    margin-bottom: 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    color: #002060;
+    background-color:  #ffc000;
+}
+.entete {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_profil {
+    margin: 5px 0 5px 0;
+    width: 200px;
+    height: auto;
+}
+.coordonnées {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.linkedin {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    border-radius: 15px;
+    color: #002060;
+    background-color:  #ffc000;
+}
+
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    border-radius: 15px;
+    color: #002060;
+    background-color:  #ffc000;
+}
+
+h4 { 
+    margin: 20px 0 20px 0;
+}
+.projet {
+    border-radius: 15px;
+    background-color:  #ffc000;
+    color:  #002060;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.5s;
+
+}
+.projet:hover {
+    background-color: white;
+    color: #002060;
+    letter-spacing: 5px;
+}
+
+.contenue {
+    margin: 10px 0 10px 0;
+    padding:  10px 30px 10px 30px ;
+    border-radius: 15px;
+    color:white;
+    background-color:  #002060  ;
+}
+
+.photo {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+legend {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.lien_texte {
+    color: #ffc000;
+}
+.sous_titre {
+    text-align: center;
+}
+
+/*-----image_miseenpage----*/
+.preuve1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.empl_image1 {
+    margin: 5px;
+    text-align: center;
+}
+.empl_image2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image {
+    width: 300px;
+    height: auto;
+    text-align: center;
+}
+
+/*----bouton-retours----*/
+.emplacement_bouton {
+    text-align: center;
+    margin: 40px 0 60px 0;
+
+}
+.bouton {
+    border-radius: 15px;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffc000;
+    background-color: #002060;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.bouton:hover {
+    background-color: #ffc000;
+    color: #002060;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 1370px) {
+    body {
+        margin: 0 5% 0 5%;
+    }
+    .entete {
+        display: flex;
+        flex-direction: column; /* Met l'image sous le div */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1370px;
+        margin: 0 auto;
+    }
+    .coord-cont {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Ajouté pour centrer verticalement */
+        flex-direction: column;
+    }
+}
+@media (max-width: 730px) {
+    h2 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .photo {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+}
