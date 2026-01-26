@@ -233,6 +233,7 @@ legend {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 1370px) {
