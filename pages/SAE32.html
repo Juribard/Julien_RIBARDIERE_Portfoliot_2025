@@ -36,7 +36,7 @@
         </ul>
         <h4 class="sous-titre">Phase 1: Mise en place de l’infrastructure</h4>
         <p>
-            Dans le cadre de la première phase, mon groupe, composé de cinq étudiants, est recruté par une entreprise fictive nommée Pellet‑SA (Pellet.com). L’objectif qui nous est confié consiste à mettre en œuvre un réseau physique dépourvu de tout mécanisme de sécurité, en s’appuyant sur l’argument suivant : « <i>C’est comme les assurances, on paye et ça ne sert jamais !</i> ».
+            Dans le cadre de la première phase (qui est à réaliser en 1 semaine), mon groupe, composé de cinq étudiants, est recruté par une entreprise fictive nommée Pellet‑SA (Pellet.com). L’objectif qui nous est confié consiste à mettre en œuvre un réseau physique dépourvu de tout mécanisme de sécurité, en s’appuyant sur l’argument suivant : « <i>C’est comme les assurances, on paye et ça ne sert jamais !</i> ».
             <br>
             De plus, dans notre maquette (ainsi que dans celle de l’équipe adverse), les enseignants seront chargés d’implémenter une base ADDS que nous devrons sécuriser au minimum.
             <br><br>
@@ -45,7 +45,7 @@
         </p>
         <h4 class="sous-titre">Phase 2: Audit de sécurité</h4>
         <p>
-            Dans la seconde phase, nous devrons réaliser un audit de sécurité sur la maquette de l’équipe adverse en étudiant une vulnérabilité par personne. Cette étape nécessitera un temps d’exploration, de recherche et d’acquisition de connaissances techniques, notamment à partir de ressources disponibles en ligne, afin de comprendre et d’exploiter correctement les vulnérabilités identifiées.
+            Dans la seconde phase (qui est à réaliser en 1 semaine), nous devrons réaliser un audit de sécurité sur la maquette de l’équipe adverse en étudiant une vulnérabilité par personne. Cette étape nécessitera un temps d’exploration, de recherche et d’acquisition de connaissances techniques, notamment à partir de ressources disponibles en ligne, afin de comprendre et d’exploiter correctement les vulnérabilités identifiées.
             <br><br>
             Une présentation orale sera ensuite réalisée devant les enseignants. Chaque étudiant devra y présenter la vulnérabilité qu’il a étudiée ainsi que les solutions permettant d’en limiter les risques.
         </p>
@@ -76,10 +76,22 @@
     <div class="contenue">
         <h3>Mes réalisations</h3>
         <p class="lien_texte"><b>Phase 1: Mise en place de l’infrastructure</b></p>
-        <img src="/images/SAE32_schemalogique.png" class="photo">
+        <img src="../images/SAE32_schemalogique.png" class="photo">
         <legend><i>Schema logique de la maquette</i></legend>
         <p>        
-
+            Dans le cadre de ce projet, le groupe de TP (Travaux Pratiques), composé de dix personnes, a été divisé en deux équipes de cinq. Ces deux équipes, qui s’échangeront leurs maquettes lors de la phase 2, doivent respecter le cahier des charges afin de répondre aux exigences de l’entreprise fictive.
+            <br><br>
+            Au sein de l’une de ces équipes, la nôtre a été répartie en deux sous‑groupes :
+            <br><br>
+            • 	<u>La partie Service</u>, chargée de mettre en place les machines virtuelles et les services tels que DHCP, LDAP et SMB.
+            <br><br>
+            • 	<u>La partie Réseau</u>, responsable de la mise en œuvre d’un réseau local opérationnel incluant l’implémentation des VLAN, du Spanning Tree, du HSRP, des agrégations de liens et de l’accès SSH.
+            <br><br>
+            Des livrables tels que les Procédures d’Exécution et d’Essais (PEE), les Procédures Techniques d’Installation (PTI), la répartition des tâches et l’emprunt du matériel étaient attendus par les enseignants en vue d’une inspection après une semaine de travail, en préparation de l’échange de maquettes avec l’autre équipe pour l’audit de sécurité.
+            <br><br>
+            Pour ma part, j’ai été chargé de soutenir l’équipe dans la réalisation du plan d’adressage IP de la maquette, de l’étude des protocoles liés à HSRP (GLBP, FHRP et VRRP), ainsi que de la rédaction d’une partie des livrables destinés aux enseignants. Ces tâches m’ont été attribuées en raison d’absences prévues de longue date, afin d’éviter que l’équipe ne soit pénalisée par d’éventuels retards.
+            <br><br>
+            À noter que pour les switchs L2/L3, deux équipements ont été regroupés en un seul via un système de stack, ce qui donne au total deux stacks de switchs L2/L3.
         </p>
         <p class="lien_texte"><b>Phase 2: Audit de sécurité</b></p>
         <p>
@@ -89,11 +101,11 @@
     <div class="contenue">
         <h3>Résultats</h3>
         <p class="lien_texte"><b>Phase 1: Mise en place de l’infrastructure</b></p>
-        <img src="/images/SAE32_maquette.png" class="photo">
+        <img src="../images/SAE32_maquette.png" class="photo">
         <legend><i>Photo de la maquette</i></legend>
-        <img src="/images/SAE32_plan_ip.png" class="photo">
+        <img src="../images/SAE32_plan_ip.png" class="photo">
         <legend><i>Plan IP de la maquette</i></legend>
-        <img src="/images/SAE32_HSRP.png" class="photo">
+        <img src="../images/SAE32_HSRP.png" class="photo">
         <legend><i>Un extrait d'un fichier de configuration qui met en oeuvre le VRRP (un protocole issue de la famille du HSRP</i></legend>
         <p>        
 
