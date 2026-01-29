@@ -136,7 +136,17 @@
         <a href="../images/SAE32_as_rep-roasting.png"><img src="../images/SAE32_as_rep-roasting.png" class="photo"></a>
         <legend><i>ETAPE 5: Exemple d'un mot de passe hasher obtenue d'un compte sans pré-authentification Kerberos</i></legend>
         <p>
-            
+            Avant d’explorer la possibilité d’exploiter le service LDAP, il a fallu explorer le réseau de la cible. C’est pourquoi la commande « nmap -sV 10.0.0.0/16 » fut utilisée pour explorer les services disponibles de l’IP 10.0.0.1 à 10.0.255.254. Après avoir identifié le principal serveur du réseau, c’est‑à‑dire le serveur 10.0.2.11, j’ai pu identifier 14 services activés, y compris le service LDAP (ÉTAPE 1).
+            <br><br>
+            Par conséquent, j’ai tenté de m’authentifier sans mot de passe à la racine du service, ce qui m’a permis d’observer les noms de domaines (ÉTAPE 2). J’ai donc essayé de m’authentifier sur « DC=G6, DC=test » sans mot de passe pour consulter l’annuaire, mais la connexion me fut refusée.
+            <br><br>
+            J’ai alors décidé d’identifier les comptes utilisateurs qui pourraient être exploités via Kerbrute. Grâce à une liste de noms classiques, tels que des noms de comptes administrateurs ou obtenus par renseignement (qui pourraient être récupérés via les réseaux sociaux comme LinkedIn dans un contexte réel), renseignés dans un fichier texte (.txt) (ÉTAPE 4), j’ai décidé d’utiliser Impacket, un script Python, me permettant d’identifier les comptes n’ayant pas de pré‑authentification activée (ÉTAPE 5). Ainsi, des dizaines de comptes sur une centaine m’ont permis de trouver des comptes utilisateurs avec leurs mots de passe hachés.
+            <br><br>
+            Ayant obtenu leurs mots de passe hachés, il était par conséquent possible d’envisager une attaque de type AS‑REP Roasting visant à tenter d’associer un mot de passe en clair à ceux enregistrés dans une base de données hors ligne à l’aide de « John the Ripper » ou « Hashcat ».
+            <br><br>
+            Dans le cas où le mot de passe ne fut pas associé au hash identifié via un compte utilisateur, ce qui est le cas du compte « Bran Stark » présenté à l’ÉTAPE 5 (ce qui ne signifie pas qu’il s’agit d’un mot de passe faible, mais simplement que John the Ripper ou Hashcat ne l’a pas trouvé), il reste tout à fait possible d’effectuer une attaque par force brute.
+            <br><br>
+            Par conséquent, les recommandations, notamment celles de l’ANSSI (voir le projet « <a href="SAE11.html">Se sensibiliser à l'hygiène informatique</a> »), sont de changer de mots de passe au profit de mots de passe d’au moins 12 caractères, incluant des lettres (minuscules et majuscules), des chiffres et des caractères spéciaux.
         </p>
     </div>
     <div class="contenue">
