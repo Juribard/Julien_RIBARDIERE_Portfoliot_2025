@@ -214,7 +214,7 @@ legend {
 /*----bouton-retours----*/
 .emplacement_bouton {
     text-align: center;
-    margin: 40px 0 60px 0;
+    margin: 40px 0 40px 0;
 
 }
 .bouton {
@@ -238,6 +238,30 @@ legend {
     flex-wrap: wrap;
     align-content: flex-start;
     margin-bottom: 20px;
+}
+
+/* Pied de page*/
+footer {
+    background-color: #002060;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.liste_footpage {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+.navigation_pied_page {
+    display: flex;
+}
+.liste-navigation {
+    margin-bottom: 10px;
+}
+.commentaire {
+    margin-top: 10px;
+    border-top: #ffc000 2px solid;
+    text-align: center;
+    color: #ffc000;
 }
 
 @media (max-width: 1370px) {
@@ -278,6 +302,11 @@ legend {
         height: auto;
         display: block;
         margin: auto;
+    }
+    .navigation_pied_page {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 @media (max-width: 768px) {
