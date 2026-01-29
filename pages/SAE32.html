@@ -97,7 +97,14 @@
         </p>
         <p class="lien_texte"><b>Phase 2: Audit de sécurité</b></p>
         <p>
-            
+            Dans le contexte où la phase 2 doit être réalisée en une semaine et où la notation est individuelle, tous les membres de l’équipe sont mobilisés pour étudier les failles potentielles exploitables sur la maquette concurrente. En raison du manque de connaissances initiales sur les vulnérabilités possibles, des recherches et des expérimentations individuelles ont été nécessaires. Lorsqu’une piste ne s’avérait finalement pas exploitable, nous en étudiions une autre.
+            <br><br>
+            Pour ma part, sachant que les enseignants nous avaient régulièrement demandé de désactiver le service HTTP des équipements réseau depuis le projet « <a href="SAE12.html">S'initier aux réseaux informatiques</a> », j’ai commencé par analyser cette piste. Cependant, n’ayant identifié aucune vulnérabilité compatible avec le matériel utilisé, j’ai décidé de me tourner vers un autre élément de la maquette.
+            <br><br>
+            Dans le contexte où RSTP (Spanning Tree) est mis en œuvre, j’ai vérifié son fonctionnement via Wireshark, ce qui m’a permis d’observer différents paquets STP. J’ai donc choisi d’approfondir cette piste. J’ai identifié qu’il serait théoriquement possible de perturber le réseau en forçant la réélection du switch racine en faisant passer la machine infiltratrice pour un switch. Toutefois, après avoir testé un script trouvé en ligne et étudié plus en détail la documentation, il s’est avéré que le matériel réseau récent est suffisamment robuste pour supporter la charge et refuse la réélection, rendant l’attaque inopérante.
+            <br><br>
+            Je me suis donc finalement orienté vers l’un des services mis en œuvre par un serveur de la maquette cible : LDAP. En effet, LDAP étant un service d’annuaire d’Active Directory, je souhaitais explorer la possibilité de m’authentifier avec ou sans mot de passe.
+
         </p>
     </div>
     <div class="contenue">
@@ -108,7 +115,7 @@
         <img src="../images/SAE32_plan_ip.png" class="photo">
         <legend><i>Plan IP de la maquette</i></legend>
         <img src="../images/SAE32_HSRP.png" class="photo">
-        <legend><i>Un extrait d'un fichier de configuration qui met en oeuvre le FHRP (un protocole issue de la famille du HSRP</i></legend>
+        <legend><i>Un extrait d'un fichier de configuration qui met en oeuvre le FHRP (un protocole issue de la famille du HSRP)</i></legend>
         <a href="../images/SAE32_taches.png"><img src="../images/SAE32_taches.png" class="photo"></a>
         <legend><i>Tableau sur l'organisation des taches</i></legend>
         <p>        
